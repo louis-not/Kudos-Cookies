@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A57D111D29C864DF00DCA956 /* Kudos_CookiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D111C29C864DF00DCA956 /* Kudos_CookiesApp.swift */; };
-		A57D111F29C864DF00DCA956 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D111E29C864DF00DCA956 /* ContentView.swift */; };
-		A57D112129C864DF00DCA956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57D112029C864DF00DCA956 /* Assets.xcassets */; };
-		A57D112429C864DF00DCA956 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57D112329C864DF00DCA956 /* Preview Assets.xcassets */; };
+		A57D113729C8BE8400DCA956 /* Kudos_CookiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D113629C8BE8400DCA956 /* Kudos_CookiesApp.swift */; };
+		A57D113929C8BE8400DCA956 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D113829C8BE8400DCA956 /* ContentView.swift */; };
+		A57D113B29C8BE8500DCA956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57D113A29C8BE8500DCA956 /* Assets.xcassets */; };
+		A57D113E29C8BE8500DCA956 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57D113D29C8BE8500DCA956 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A57D111929C864DF00DCA956 /* Kudos-Cookies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kudos-Cookies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A57D111C29C864DF00DCA956 /* Kudos_CookiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kudos_CookiesApp.swift; sourceTree = "<group>"; };
-		A57D111E29C864DF00DCA956 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A57D112029C864DF00DCA956 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A57D112329C864DF00DCA956 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A57D113329C8BE8400DCA956 /* Kudos-Cookies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kudos-Cookies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A57D113629C8BE8400DCA956 /* Kudos_CookiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kudos_CookiesApp.swift; sourceTree = "<group>"; };
+		A57D113829C8BE8400DCA956 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A57D113A29C8BE8500DCA956 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A57D113D29C8BE8500DCA956 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A57D111629C864DF00DCA956 /* Frameworks */ = {
+		A57D113029C8BE8400DCA956 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,37 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A57D111029C864DF00DCA956 = {
+		A57D112A29C8BE8400DCA956 = {
 			isa = PBXGroup;
 			children = (
-				A57D111B29C864DF00DCA956 /* Kudos-Cookies */,
-				A57D111A29C864DF00DCA956 /* Products */,
+				A57D113529C8BE8400DCA956 /* Kudos-Cookies */,
+				A57D113429C8BE8400DCA956 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A57D111A29C864DF00DCA956 /* Products */ = {
+		A57D113429C8BE8400DCA956 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A57D111929C864DF00DCA956 /* Kudos-Cookies.app */,
+				A57D113329C8BE8400DCA956 /* Kudos-Cookies.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A57D111B29C864DF00DCA956 /* Kudos-Cookies */ = {
+		A57D113529C8BE8400DCA956 /* Kudos-Cookies */ = {
 			isa = PBXGroup;
 			children = (
-				A57D111C29C864DF00DCA956 /* Kudos_CookiesApp.swift */,
-				A57D111E29C864DF00DCA956 /* ContentView.swift */,
-				A57D112029C864DF00DCA956 /* Assets.xcassets */,
-				A57D112229C864DF00DCA956 /* Preview Content */,
+				A57D113629C8BE8400DCA956 /* Kudos_CookiesApp.swift */,
+				A57D113829C8BE8400DCA956 /* ContentView.swift */,
+				A57D113A29C8BE8500DCA956 /* Assets.xcassets */,
+				A57D113C29C8BE8500DCA956 /* Preview Content */,
 			);
 			path = "Kudos-Cookies";
 			sourceTree = "<group>";
 		};
-		A57D112229C864DF00DCA956 /* Preview Content */ = {
+		A57D113C29C8BE8500DCA956 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				A57D112329C864DF00DCA956 /* Preview Assets.xcassets */,
+				A57D113D29C8BE8500DCA956 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -70,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A57D111829C864DF00DCA956 /* Kudos-Cookies */ = {
+		A57D113229C8BE8400DCA956 /* Kudos-Cookies */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A57D112729C864DF00DCA956 /* Build configuration list for PBXNativeTarget "Kudos-Cookies" */;
+			buildConfigurationList = A57D114129C8BE8500DCA956 /* Build configuration list for PBXNativeTarget "Kudos-Cookies" */;
 			buildPhases = (
-				A57D111529C864DF00DCA956 /* Sources */,
-				A57D111629C864DF00DCA956 /* Frameworks */,
-				A57D111729C864DF00DCA956 /* Resources */,
+				A57D112F29C8BE8400DCA956 /* Sources */,
+				A57D113029C8BE8400DCA956 /* Frameworks */,
+				A57D113129C8BE8400DCA956 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +84,25 @@
 			);
 			name = "Kudos-Cookies";
 			productName = "Kudos-Cookies";
-			productReference = A57D111929C864DF00DCA956 /* Kudos-Cookies.app */;
+			productReference = A57D113329C8BE8400DCA956 /* Kudos-Cookies.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A57D111129C864DF00DCA956 /* Project object */ = {
+		A57D112B29C8BE8400DCA956 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					A57D111829C864DF00DCA956 = {
+					A57D113229C8BE8400DCA956 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = A57D111429C864DF00DCA956 /* Build configuration list for PBXProject "Kudos-Cookies" */;
+			buildConfigurationList = A57D112E29C8BE8400DCA956 /* Build configuration list for PBXProject "Kudos-Cookies" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,42 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = A57D111029C864DF00DCA956;
-			productRefGroup = A57D111A29C864DF00DCA956 /* Products */;
+			mainGroup = A57D112A29C8BE8400DCA956;
+			productRefGroup = A57D113429C8BE8400DCA956 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A57D111829C864DF00DCA956 /* Kudos-Cookies */,
+				A57D113229C8BE8400DCA956 /* Kudos-Cookies */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A57D111729C864DF00DCA956 /* Resources */ = {
+		A57D113129C8BE8400DCA956 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A57D112429C864DF00DCA956 /* Preview Assets.xcassets in Resources */,
-				A57D112129C864DF00DCA956 /* Assets.xcassets in Resources */,
+				A57D113E29C8BE8500DCA956 /* Preview Assets.xcassets in Resources */,
+				A57D113B29C8BE8500DCA956 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A57D111529C864DF00DCA956 /* Sources */ = {
+		A57D112F29C8BE8400DCA956 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A57D111F29C864DF00DCA956 /* ContentView.swift in Sources */,
-				A57D111D29C864DF00DCA956 /* Kudos_CookiesApp.swift in Sources */,
+				A57D113929C8BE8400DCA956 /* ContentView.swift in Sources */,
+				A57D113729C8BE8400DCA956 /* Kudos_CookiesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A57D112529C864DF00DCA956 /* Debug */ = {
+		A57D113F29C8BE8500DCA956 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -205,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		A57D112629C864DF00DCA956 /* Release */ = {
+		A57D114029C8BE8500DCA956 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -259,7 +259,7 @@
 			};
 			name = Release;
 		};
-		A57D112829C864DF00DCA956 /* Debug */ = {
+		A57D114229C8BE8500DCA956 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -287,7 +287,7 @@
 			};
 			name = Debug;
 		};
-		A57D112929C864DF00DCA956 /* Release */ = {
+		A57D114329C8BE8500DCA956 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -318,25 +318,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A57D111429C864DF00DCA956 /* Build configuration list for PBXProject "Kudos-Cookies" */ = {
+		A57D112E29C8BE8400DCA956 /* Build configuration list for PBXProject "Kudos-Cookies" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A57D112529C864DF00DCA956 /* Debug */,
-				A57D112629C864DF00DCA956 /* Release */,
+				A57D113F29C8BE8500DCA956 /* Debug */,
+				A57D114029C8BE8500DCA956 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A57D112729C864DF00DCA956 /* Build configuration list for PBXNativeTarget "Kudos-Cookies" */ = {
+		A57D114129C8BE8500DCA956 /* Build configuration list for PBXNativeTarget "Kudos-Cookies" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A57D112829C864DF00DCA956 /* Debug */,
-				A57D112929C864DF00DCA956 /* Release */,
+				A57D114229C8BE8500DCA956 /* Debug */,
+				A57D114329C8BE8500DCA956 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A57D111129C864DF00DCA956 /* Project object */;
+	rootObject = A57D112B29C8BE8400DCA956 /* Project object */;
 }
