@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300B49F429C9AE6C009314E9 /* Kudos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 300B49F229C9AE6C009314E9 /* Kudos.xcdatamodeld */; };
+		300B49F629C9AE77009314E9 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300B49F529C9AE77009314E9 /* Persistance.swift */; };
 		A57D113729C8BE8400DCA956 /* Kudos_CookiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D113629C8BE8400DCA956 /* Kudos_CookiesApp.swift */; };
 		A57D113929C8BE8400DCA956 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D113829C8BE8400DCA956 /* ContentView.swift */; };
 		A57D113B29C8BE8500DCA956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57D113A29C8BE8500DCA956 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		300B49F329C9AE6C009314E9 /* Kudos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kudos.xcdatamodel; sourceTree = "<group>"; };
+		300B49F529C9AE77009314E9 /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
 		A57D113329C8BE8400DCA956 /* Kudos-Cookies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kudos-Cookies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57D113629C8BE8400DCA956 /* Kudos_CookiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kudos_CookiesApp.swift; sourceTree = "<group>"; };
 		A57D113829C8BE8400DCA956 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,8 +60,10 @@
 				A57D113629C8BE8400DCA956 /* Kudos_CookiesApp.swift */,
 				A57D113829C8BE8400DCA956 /* ContentView.swift */,
 				A57D114429C8CA3000DCA956 /* homeView.swift */,
+				300B49F529C9AE77009314E9 /* Persistance.swift */,
 				A57D113A29C8BE8500DCA956 /* Assets.xcassets */,
 				A57D113C29C8BE8500DCA956 /* Preview Content */,
+				300B49F229C9AE6C009314E9 /* Kudos.xcdatamodeld */,
 			);
 			path = "Kudos-Cookies";
 			sourceTree = "<group>";
@@ -140,8 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				300B49F429C9AE6C009314E9 /* Kudos.xcdatamodeld in Sources */,
 				A57D113929C8BE8400DCA956 /* ContentView.swift in Sources */,
 				A57D113729C8BE8400DCA956 /* Kudos_CookiesApp.swift in Sources */,
+				300B49F629C9AE77009314E9 /* Persistance.swift in Sources */,
 				A57D114529C8CA3000DCA956 /* homeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +349,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		300B49F229C9AE6C009314E9 /* Kudos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				300B49F329C9AE6C009314E9 /* Kudos.xcdatamodel */,
+			);
+			currentVersion = 300B49F329C9AE6C009314E9 /* Kudos.xcdatamodel */;
+			path = Kudos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A57D112B29C8BE8400DCA956 /* Project object */;
 }
