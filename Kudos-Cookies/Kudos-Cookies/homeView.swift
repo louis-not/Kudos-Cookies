@@ -10,7 +10,7 @@ import SwiftUI
 struct homeView: View {
 //    @Binding var name:String
     @State var isDragging=false
-    @State var position = CGSize.zero
+    @State var position = CGSize(width: 0, height: 175)
     
     var body: some View {
         VStack{
@@ -60,7 +60,7 @@ struct homeView: View {
                                     isDragging = true
                                 })
                                 .onEnded({ value in
-                                    position = .zero // CGSize(width: 0, height: 200)
+                                    position = CGSize(width: position.width, height: 175) // CGSize(width: 0, height: 200)
                                     isDragging = false
                                 })
                         )
