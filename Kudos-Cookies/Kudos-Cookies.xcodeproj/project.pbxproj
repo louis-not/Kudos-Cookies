@@ -10,6 +10,8 @@
 		30D3F2E129C9C19400596EC3 /* KudosSeeder.json in Resources */ = {isa = PBXBuildFile; fileRef = 30D3F2E029C9C19400596EC3 /* KudosSeeder.json */; };
 		30D3F2E529CA065200596EC3 /* KudosData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3F2E429CA065200596EC3 /* KudosData.swift */; };
 		30D3F2E729CA06EC00596EC3 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3F2E629CA06EC00596EC3 /* DataLoader.swift */; };
+		30D3F2ED29CA13ED00596EC3 /* CrackedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3F2EC29CA13ED00596EC3 /* CrackedView.swift */; };
+		30D3F2EF29CA150F00596EC3 /* KudosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3F2EE29CA150F00596EC3 /* KudosManager.swift */; };
 		A57D113729C8BE8400DCA956 /* Kudos_CookiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D113629C8BE8400DCA956 /* Kudos_CookiesApp.swift */; };
 		A57D113929C8BE8400DCA956 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D113829C8BE8400DCA956 /* ContentView.swift */; };
 		A57D113B29C8BE8500DCA956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57D113A29C8BE8500DCA956 /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 		30D3F2E029C9C19400596EC3 /* KudosSeeder.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = KudosSeeder.json; sourceTree = "<group>"; };
 		30D3F2E429CA065200596EC3 /* KudosData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosData.swift; sourceTree = "<group>"; };
 		30D3F2E629CA06EC00596EC3 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		30D3F2EC29CA13ED00596EC3 /* CrackedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrackedView.swift; sourceTree = "<group>"; };
+		30D3F2EE29CA150F00596EC3 /* KudosManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosManager.swift; sourceTree = "<group>"; };
 		A57D113329C8BE8400DCA956 /* Kudos-Cookies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kudos-Cookies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57D113629C8BE8400DCA956 /* Kudos_CookiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kudos_CookiesApp.swift; sourceTree = "<group>"; };
 		A57D113829C8BE8400DCA956 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,8 +50,19 @@
 				30D3F2E429CA065200596EC3 /* KudosData.swift */,
 				30D3F2E629CA06EC00596EC3 /* DataLoader.swift */,
 				30D3F2E029C9C19400596EC3 /* KudosSeeder.json */,
+				30D3F2EE29CA150F00596EC3 /* KudosManager.swift */,
 			);
 			path = KudosData;
+			sourceTree = "<group>";
+		};
+		30D3F2EB29CA13CF00596EC3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A57D113829C8BE8400DCA956 /* ContentView.swift */,
+				A57D114429C8CA3000DCA956 /* homeView.swift */,
+				30D3F2EC29CA13ED00596EC3 /* CrackedView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A57D112A29C8BE8400DCA956 = {
@@ -69,10 +84,9 @@
 		A57D113529C8BE8400DCA956 /* Kudos-Cookies */ = {
 			isa = PBXGroup;
 			children = (
+				30D3F2EB29CA13CF00596EC3 /* Views */,
 				30D3F2EA29CA12BE00596EC3 /* KudosData */,
 				A57D113629C8BE8400DCA956 /* Kudos_CookiesApp.swift */,
-				A57D113829C8BE8400DCA956 /* ContentView.swift */,
-				A57D114429C8CA3000DCA956 /* homeView.swift */,
 				A57D113A29C8BE8500DCA956 /* Assets.xcassets */,
 				A57D113C29C8BE8500DCA956 /* Preview Content */,
 			);
@@ -160,8 +174,10 @@
 			files = (
 				A57D113929C8BE8400DCA956 /* ContentView.swift in Sources */,
 				A57D113729C8BE8400DCA956 /* Kudos_CookiesApp.swift in Sources */,
+				30D3F2ED29CA13ED00596EC3 /* CrackedView.swift in Sources */,
 				30D3F2E729CA06EC00596EC3 /* DataLoader.swift in Sources */,
 				30D3F2E529CA065200596EC3 /* KudosData.swift in Sources */,
+				30D3F2EF29CA150F00596EC3 /* KudosManager.swift in Sources */,
 				A57D114529C8CA3000DCA956 /* homeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

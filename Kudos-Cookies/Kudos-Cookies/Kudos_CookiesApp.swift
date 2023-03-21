@@ -9,15 +9,16 @@ import SwiftUI
 
 @main
 struct Kudos_CookiesApp: App {
-//    let persistenceController = PersistenceController.shared
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
             
+            // testing json
             let data = DataLoader().kudosData
-            let _ = print(data[0])
+//            let _ = print(data[0])
+            
+            let _ = print(KudosManager().filterByName(name: "Jane"))
         }
     }
 }
