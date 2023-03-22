@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @State private var index:Int = 0
     @State private var name:String = "Alice"
+    @State var showNameView:Bool = false
+    @State var cookieCount:Int = 5
     
     // Dragging state
 //    @State private var isDragging = false
@@ -23,7 +25,10 @@ struct ContentView: View {
             
             // Home Element
             VStack {
-                homeView()
+                homeView(showNameView: $showNameView, cookieCount: $cookieCount)
+//                if nameButton{
+//                    Text("Insert your name here")
+//                }
             }
             
         }
