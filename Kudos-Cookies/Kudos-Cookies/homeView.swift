@@ -12,8 +12,7 @@ struct homeView: View {
     @Binding var showNameView:Bool
     // buat 1 variable sebagai constraint dari zstack batas si circle
     @Binding var cookieCount:Int
-    @State var isDragging=false
-    @State var position = CGSize(width: 0, height: 175)
+    
     
     var body: some View {
         VStack{
@@ -53,25 +52,11 @@ struct homeView: View {
                             .scaledToFit()
                             .frame(width: 300, height: 400, alignment: .center)
                             .padding(.top,50)
+                        
                         // foreach di loop sebanyak jumlah cookiecount
-                        // masukin codingan cookie view dibawah
-                        // offset harus dirandom pake arc.randomize
-                        Circle()
-                            .frame(width: 100, height: 100)
-                            .offset(x: position.width, y: position.height)
-                            .foregroundColor(.brown)
-                            .animation(.spring(), value: position)
-                            .gesture(
-                                DragGesture()
-                                    .onChanged({ value in
-                                        position = value.translation
-                                        isDragging = true
-                                    })
-                                    .onEnded({ value in
-                                        position = CGSize(width: position.width, height: 175) // CGSize(width: 0, height: 200)
-                                        isDragging = false
-                                    })
-                            )
+                        ForEach(0..<cookieCount, id:\.self){ _ in
+                            cookie()
+                        }
 
                     }.frame(width: 100,height: 50)
                     //spritekit
