@@ -9,9 +9,11 @@ import Foundation
 
 public class KudosManager {
     
-    let data = DataLoader().kudosData
+    private let data = DataLoader().kudosData
+    let name = "sheren"
+    let myKudos = [KudosData]()
     
-    func filterByName(name: String) -> Array<KudosData> {
+    func getKudos() -> Array<KudosData> {
         var myKudos = [KudosData]()
         for kudos in data {
             if(kudos.name == name) {

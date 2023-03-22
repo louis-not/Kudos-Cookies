@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var kudosManager = KudosManager()
     @State private var index:Int = 0
     @State private var name:String = "Alice"
     
@@ -24,7 +26,8 @@ struct ContentView: View {
             // Home Element
             VStack {
 //                homeView()
-                CrackedView()
+//                CrackedView(kudosManager: $kudosManager)
+                NameView()
             }
             
         }

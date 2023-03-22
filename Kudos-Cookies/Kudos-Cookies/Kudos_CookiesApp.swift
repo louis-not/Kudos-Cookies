@@ -13,12 +13,6 @@ struct Kudos_CookiesApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-            
-            // testing json
-            let data = DataLoader().kudosData
-//            let _ = print(data[0])
-            
-            let _ = print(KudosManager().filterByName(name: "Jane"))
         }
     }
 }
