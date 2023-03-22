@@ -37,11 +37,6 @@ struct homeView: View {
                             .bold()
                     }
 
-//                    Button(action: { showNameView = true }) {
-//
-//                    } label: {
-//                    }
-                    
                 }
                 Text("It's time to get your cookie!")
                     .font(.title2)
@@ -49,7 +44,7 @@ struct homeView: View {
                     .bold()
                 Spacer()
                 ZStack{
-                    Color.white
+                    Color.blue
                     ZStack {
                         Color.red
                         Image("jar")
