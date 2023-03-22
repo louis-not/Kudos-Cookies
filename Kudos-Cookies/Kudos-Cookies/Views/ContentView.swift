@@ -23,7 +23,8 @@ struct ContentView: View {
             
             // Home Element
             VStack {
-                homeView()
+//                homeView()
+                CrackedView()
             }
             
         }
