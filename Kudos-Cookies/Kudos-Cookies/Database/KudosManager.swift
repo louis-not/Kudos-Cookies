@@ -10,17 +10,15 @@ import Foundation
 public class KudosManager {
     
     private let data = DataLoader().kudosData
-    let name = "sheren"
-    let myKudos = [KudosData]()
+    var name = "sheren"
+    var myKudos = [KudosData]()
     
-    func getKudos() -> Array<KudosData> {
-        var myKudos = [KudosData]()
+    func getKudos() -> Void {
         for kudos in data {
             if(kudos.name == name) {
                 myKudos.append(kudos)
             }
         }
-        return myKudos
     }
     
 }

@@ -12,6 +12,7 @@ struct ContentView: View {
     @State var kudosManager = KudosManager()
     @State private var index:Int = 0
     @State private var name:String = "Alice"
+    @State var page = 1
     
     // Dragging state
 //    @State private var isDragging = false
@@ -23,11 +24,16 @@ struct ContentView: View {
             Color(red: 0.9568627450980393, green: 0.8627450980392157, blue: 0.7607843137254902)
                 .ignoresSafeArea()
             
-            // Home Element
+            // Views
             VStack {
-//                homeView()
 //                CrackedView(kudosManager: $kudosManager)
-                NameView()
+                if page == 1 {
+                    NameView(kudosManager: $kudosManager, page: $page)
+                } else if page == 2 {
+                    homeView(kudosManager: $kudosManager)
+                } else if page == 3 {
+                    CrackedView(kudosManager: $kudosManager)
+                }
             }
             
         }

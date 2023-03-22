@@ -11,6 +11,7 @@ struct homeView: View {
 //    @Binding var name:String
     @State var isDragging=false
     @State var position = CGSize.zero
+    @Binding var kudosManager: KudosManager
     
     var body: some View {
         VStack{
@@ -27,7 +28,7 @@ struct homeView: View {
                     Button {
                         print("New name: hello")
                     } label: {
-                        Text("hello")
+                        Text("\(kudosManager.name)")
                             .font(.title2)
                             .foregroundColor(Color(red: 0.7176470588235294, green: 0.30196078431372547, blue: 0.10196078431372549))
                             .bold()
@@ -77,8 +78,8 @@ struct homeView: View {
     }
 }
 
-struct homeView_Previews: PreviewProvider {
-    static var previews: some View {
-        homeView()
-    }
-}
+//struct homeView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        homeView()
+//    }
+//}

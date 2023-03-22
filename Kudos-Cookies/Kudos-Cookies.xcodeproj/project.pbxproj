@@ -46,7 +46,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		30D3F2EA29CA12BE00596EC3 /* KudosData */ = {
+		30CF25B229CB45B000127F7C /* Database */ = {
 			isa = PBXGroup;
 			children = (
 				30D3F2E429CA065200596EC3 /* KudosData.swift */,
@@ -54,7 +54,7 @@
 				30D3F2E029C9C19400596EC3 /* KudosSeeder.json */,
 				30D3F2EE29CA150F00596EC3 /* KudosManager.swift */,
 			);
-			path = KudosData;
+			path = Database;
 			sourceTree = "<group>";
 		};
 		30D3F2EB29CA13CF00596EC3 /* Views */ = {
@@ -87,8 +87,8 @@
 		A57D113529C8BE8400DCA956 /* Kudos-Cookies */ = {
 			isa = PBXGroup;
 			children = (
+				30CF25B229CB45B000127F7C /* Database */,
 				30D3F2EB29CA13CF00596EC3 /* Views */,
-				30D3F2EA29CA12BE00596EC3 /* KudosData */,
 				A57D113629C8BE8400DCA956 /* Kudos_CookiesApp.swift */,
 				A57D113A29C8BE8500DCA956 /* Assets.xcassets */,
 				A57D113C29C8BE8500DCA956 /* Preview Content */,

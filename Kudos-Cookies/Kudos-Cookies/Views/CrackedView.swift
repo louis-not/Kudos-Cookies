@@ -21,7 +21,7 @@ struct CrackedView: View {
     
     var body: some View {
         ZStack {
-            homeView()
+            homeView(kudosManager: $kudosManager)
                 .blur(radius: 10)
             
             Rectangle()
@@ -44,7 +44,7 @@ struct CrackedView: View {
                         .frame(width: kudosWidth, height: kudosWidth / 2)
                         .offset(x: 0, y: kudosOffset)
                     
-                    Text("\(kudosManager.name)")
+                    Text("\(kudosManager.myKudos[0].message)")
                         .font(.system(size: kudosFontSize))
                         .offset(x: 0, y: kudosOffset)
                     
