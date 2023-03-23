@@ -10,8 +10,9 @@ import Foundation
 public class KudosManager {
     
     private let data = DataLoader().kudosData
-    var name = "sheren"
+    var name = ""
     var myKudos = [KudosData]()
+    var userExist = false
     
     func getKudos() -> Void {
         for kudos in data {

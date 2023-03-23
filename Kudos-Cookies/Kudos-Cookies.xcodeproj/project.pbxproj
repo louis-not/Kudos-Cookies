@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3074BA1529CB157000E07185 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3074BA1429CB157000E07185 /* NameView.swift */; };
 		30B8D38A29CC26280023C2D6 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8D38929CC26280023C2D6 /* SplashView.swift */; };
+		30B938E629CC7CE900639DE8 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B938E529CC7CE900639DE8 /* MotionManager.swift */; };
 		30D3F2E129C9C19400596EC3 /* KudosSeeder.json in Resources */ = {isa = PBXBuildFile; fileRef = 30D3F2E029C9C19400596EC3 /* KudosSeeder.json */; };
 		30D3F2E529CA065200596EC3 /* KudosData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3F2E429CA065200596EC3 /* KudosData.swift */; };
 		30D3F2E729CA06EC00596EC3 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3F2E629CA06EC00596EC3 /* DataLoader.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		3074BA1429CB157000E07185 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
 		30B8D38929CC26280023C2D6 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		30B938E529CC7CE900639DE8 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		30D3F2E029C9C19400596EC3 /* KudosSeeder.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = KudosSeeder.json; sourceTree = "<group>"; };
 		30D3F2E429CA065200596EC3 /* KudosData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosData.swift; sourceTree = "<group>"; };
 		30D3F2E629CA06EC00596EC3 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 				30D3F2E629CA06EC00596EC3 /* DataLoader.swift */,
 				30D3F2E029C9C19400596EC3 /* KudosSeeder.json */,
 				30D3F2EE29CA150F00596EC3 /* KudosManager.swift */,
+				30B938E529CC7CE900639DE8 /* MotionManager.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				A57D113929C8BE8400DCA956 /* ContentView.swift in Sources */,
 				A57D113729C8BE8400DCA956 /* Kudos_CookiesApp.swift in Sources */,
 				30D3F2ED29CA13ED00596EC3 /* CrackedView.swift in Sources */,
+				30B938E629CC7CE900639DE8 /* MotionManager.swift in Sources */,
 				30D3F2E729CA06EC00596EC3 /* DataLoader.swift in Sources */,
 				30D3F2E529CA065200596EC3 /* KudosData.swift in Sources */,
 				3074BA1529CB157000E07185 /* NameView.swift in Sources */,
@@ -315,6 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kudos-Cookies/Preview Content\"";
+				DEVELOPMENT_TEAM = 3R8392Y763;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -343,6 +348,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kudos-Cookies/Preview Content\"";
+				DEVELOPMENT_TEAM = 3R8392Y763;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

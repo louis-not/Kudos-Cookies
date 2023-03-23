@@ -45,6 +45,16 @@ struct NameView: View {
                 }
             }
             .toolbar {
+                
+                if kudosManager.userExist {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button("Back") {
+                            page = 2
+                        }
+                        .foregroundColor(.brown)
+                    }
+                }
+                
                 ToolbarItem(placement: .primaryAction) {
                     Button("Next") {
                         kudosManager.name = nameInput
@@ -54,6 +64,7 @@ struct NameView: View {
                             showAlert = true
                         } else {
                             showAlert = false
+                            kudosManager.userExist = true
                             page = 3
                         }
                     }

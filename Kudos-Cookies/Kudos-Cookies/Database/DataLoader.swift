@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreMotion
 
 public class DataLoader {
     @Published var kudosData = [KudosData]()
