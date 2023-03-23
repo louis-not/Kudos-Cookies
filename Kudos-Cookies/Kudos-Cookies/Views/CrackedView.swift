@@ -16,12 +16,14 @@ struct CrackedView: View {
     @State var kudosWidth = 20.0
     @State var kudosFontSize = 1.0
     @State var textOffset = -10.0
-    @State var kudosOffset = -20.0
+    @State var kudosOffset = -10.0
+    @State var textHOffset = 90.0
     @Binding var kudosManager: KudosManager
+    @Binding var page: Int
     
     var body: some View {
         ZStack {
-            homeView(kudosManager: $kudosManager)
+            homeView(kudosManager: $kudosManager, page: $page)
                 .blur(radius: 10)
             
             Rectangle()
@@ -39,14 +41,21 @@ struct CrackedView: View {
                 
                 ZStack {
                     
-                    Rectangle()
-                        .fill(.white)
+                    Image("Kudos_card/admire_you")
+                        .resizable()
                         .frame(width: kudosWidth, height: kudosWidth / 2)
                         .offset(x: 0, y: kudosOffset)
                     
-                    Text("\(kudosManager.myKudos[0].message)")
-                        .font(.system(size: kudosFontSize))
-                        .offset(x: 0, y: kudosOffset)
+                    HStack {
+                        VStack {
+                            Text("\(kudosManager.getRandomKudos())")
+                                .font(.system(size: kudosFontSize))
+                            Spacer()
+                        }
+                        Spacer()
+                    }
+                    .frame(width: 180, height: 70)
+                    .offset(x: textHOffset, y: 20)
                     
                     HStack {
                         Image("Cookie Left")
@@ -68,14 +77,25 @@ struct CrackedView: View {
                                 leftRotationAngle -= 60
                                 rightRotationAngle += 60
                                 kudosWidth *= 15
-                                kudosFontSize *= 20
+                                kudosFontSize *= 10
                                 textOffset = -100
+                                textHOffset -= 45
+                                isCracked = true
                             }
                         }
-                        isCracked = true
                     }
                 }
             }
         }
+        .onTapGesture {
+            isCracked = false
+            page = 2
+        }
     }
 }
+
+//struct CrackedView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CrackedView()
+//    }
+//}

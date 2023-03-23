@@ -29,9 +29,9 @@ struct ContentView: View {
                 if page == 1 {
                     NameView(kudosManager: $kudosManager, page: $page)
                 } else if page == 2 {
-                    homeView(kudosManager: $kudosManager)
+                    homeView(kudosManager: $kudosManager, page: $page)
                 } else if page == 3 {
-                    CrackedView(kudosManager: $kudosManager)
+                    CrackedView(kudosManager: $kudosManager, page: $page)
                 }
             }
             

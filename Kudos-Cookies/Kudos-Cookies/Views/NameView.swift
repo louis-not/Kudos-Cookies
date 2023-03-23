@@ -12,12 +12,13 @@ struct NameView: View {
     @State var nameInput: String = ""
     @Binding var kudosManager: KudosManager
     @Binding var page: Int
+    @State var showAlert = false
     
     var body: some View {
         
         NavigationView {
             ZStack {
-                homeView(kudosManager: $kudosManager)
+                homeView(kudosManager: $kudosManager, page: $page)
                     .blur(radius: 10)
 
                 Rectangle()
@@ -50,13 +51,17 @@ struct NameView: View {
                         kudosManager.getKudos()
                         
                         if(kudosManager.myKudos.isEmpty) {
-                            print("name doesn't exist!")
+                            showAlert = true
                         } else {
-                            page = 2
+                            showAlert = false
+                            page = 3
                         }
                     }
                     .foregroundColor(.brown)
                 }
+            }
+            .alert("Name does not exist!", isPresented: $showAlert) {
+                Button("Try Again", role: .cancel) { }
             }
         }
     }

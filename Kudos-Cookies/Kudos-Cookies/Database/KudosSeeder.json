@@ -2,7 +2,8 @@
     {
         "id": 1,
         "name": "Sheren",
-        "message": "congrats sheren!"
+        "message": "congrats sheren!",
+        "design": "thank you"
     },
     {
         "id": 2,

@@ -12,6 +12,7 @@ struct homeView: View {
     @State var isDragging=false
     @State var position = CGSize.zero
     @Binding var kudosManager: KudosManager
+    @Binding var page: Int
     
     var body: some View {
         VStack{
@@ -26,7 +27,7 @@ struct homeView: View {
                         .foregroundColor(Color(red: 0.596078431372549, green: 0.3568627450980392, blue: 0.24313725490196078, opacity: 1.0))
                         .bold()
                     Button {
-                        print("New name: hello")
+                        page = 1
                     } label: {
                         Text("\(kudosManager.name)")
                             .font(.title2)
