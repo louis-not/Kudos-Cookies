@@ -21,4 +21,7 @@ public class KudosManager {
         }
     }
     
+    func getRandomKudos() -> String {
+        return myKudos.randomElement()!.message
+    }
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3074BA1529CB157000E07185 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3074BA1429CB157000E07185 /* NameView.swift */; };
+		30B8D38A29CC26280023C2D6 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8D38929CC26280023C2D6 /* SplashView.swift */; };
 		30D3F2E129C9C19400596EC3 /* KudosSeeder.json in Resources */ = {isa = PBXBuildFile; fileRef = 30D3F2E029C9C19400596EC3 /* KudosSeeder.json */; };
 		30D3F2E529CA065200596EC3 /* KudosData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3F2E429CA065200596EC3 /* KudosData.swift */; };
 		30D3F2E729CA06EC00596EC3 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3F2E629CA06EC00596EC3 /* DataLoader.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		3074BA1429CB157000E07185 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
+		30B8D38929CC26280023C2D6 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		30D3F2E029C9C19400596EC3 /* KudosSeeder.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = KudosSeeder.json; sourceTree = "<group>"; };
 		30D3F2E429CA065200596EC3 /* KudosData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosData.swift; sourceTree = "<group>"; };
 		30D3F2E629CA06EC00596EC3 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				A57D113829C8BE8400DCA956 /* ContentView.swift */,
+				30B8D38929CC26280023C2D6 /* SplashView.swift */,
 				A57D114429C8CA3000DCA956 /* homeView.swift */,
 				30D3F2EC29CA13ED00596EC3 /* CrackedView.swift */,
 				3074BA1429CB157000E07185 /* NameView.swift */,
@@ -183,6 +186,7 @@
 				3074BA1529CB157000E07185 /* NameView.swift in Sources */,
 				30D3F2EF29CA150F00596EC3 /* KudosManager.swift in Sources */,
 				A57D114529C8CA3000DCA956 /* homeView.swift in Sources */,
+				30B8D38A29CC26280023C2D6 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

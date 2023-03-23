@@ -12,7 +12,7 @@ struct Kudos_CookiesApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashView()
         }
     }
 }

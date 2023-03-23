@@ -44,14 +44,6 @@ struct NameView: View {
                 }
             }
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button("Back") {
-                        print("About tapped!")
-                        let i = 1
-                        print(i)
-                    }
-                    .foregroundColor(.brown)
-                }
                 ToolbarItem(placement: .primaryAction) {
                     Button("Next") {
                         kudosManager.name = nameInput
@@ -60,8 +52,7 @@ struct NameView: View {
                         if(kudosManager.myKudos.isEmpty) {
                             print("name doesn't exist!")
                         } else {
-                            print(kudosManager.myKudos[0].message)
-                            page = 3
+                            page = 2
                         }
                     }
                     .foregroundColor(.brown)

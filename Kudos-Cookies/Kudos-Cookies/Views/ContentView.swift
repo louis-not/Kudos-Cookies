@@ -26,7 +26,6 @@ struct ContentView: View {
             
             // Views
             VStack {
-//                CrackedView(kudosManager: $kudosManager)
                 if page == 1 {
                     NameView(kudosManager: $kudosManager, page: $page)
                 } else if page == 2 {
