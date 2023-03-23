@@ -3,16 +3,18 @@
         "id": 1,
         "name": "Sheren",
         "message": "congrats sheren!",
-        "design": "thank you"
+        "design": "thank_you"
     },
     {
         "id": 2,
         "name": "Jane",
-        "message": "congrats Jane!"
+        "message": "congrats Jane!",
+        "design": "congratulation"
     },
     {
         "id": 3,
         "name": "Harry",
-        "message": "congrats Harry!"
+        "message": "congrats Harry!",
+        "design": "my_bro"
   }
 ]

@@ -11,4 +11,5 @@ struct KudosData: Codable {
     var id: Int
     var name: String
     var message: String
+    var design: String
 }

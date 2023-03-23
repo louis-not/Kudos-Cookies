@@ -20,8 +20,10 @@ struct CrackedView: View {
     @State var textHOffset = 90.0
     @Binding var kudosManager: KudosManager
     @Binding var page: Int
+    @State var kudos: KudosData
     
     var body: some View {
+        
         ZStack {
             homeView(kudosManager: $kudosManager, page: $page)
                 .blur(radius: 10)
@@ -41,14 +43,14 @@ struct CrackedView: View {
                 
                 ZStack {
                     
-                    Image("Kudos_card/admire_you")
+                    Image("Kudos_card/\(kudos.design)")
                         .resizable()
                         .frame(width: kudosWidth, height: kudosWidth / 2)
                         .offset(x: 0, y: kudosOffset)
                     
                     HStack {
                         VStack {
-                            Text("\(kudosManager.getRandomKudos())")
+                            Text("\(kudos.message)")
                                 .font(.system(size: kudosFontSize))
                             Spacer()
                         }

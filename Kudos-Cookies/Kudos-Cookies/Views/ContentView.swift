@@ -31,7 +31,7 @@ struct ContentView: View {
                 } else if page == 2 {
                     homeView(kudosManager: $kudosManager, page: $page)
                 } else if page == 3 {
-                    CrackedView(kudosManager: $kudosManager, page: $page)
+                    CrackedView(kudosManager: $kudosManager, page: $page, kudos: kudosManager.getRandomKudos())
                 }
             }
             
