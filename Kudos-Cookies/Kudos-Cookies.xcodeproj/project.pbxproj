@@ -20,6 +20,10 @@
 		A57D113B29C8BE8500DCA956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57D113A29C8BE8500DCA956 /* Assets.xcassets */; };
 		A57D113E29C8BE8500DCA956 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57D113D29C8BE8500DCA956 /* Preview Assets.xcassets */; };
 		A57D114529C8CA3000DCA956 /* homeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D114429C8CA3000DCA956 /* homeView.swift */; };
+		A5DD6B8029CD9BD800E7C3CB /* musicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD6B7F29CD9BD800E7C3CB /* musicPlayer.swift */; };
+		A5DD6B8229CD9C5400E7C3CB /* light-step-8021.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A5DD6B8129CD9C5400E7C3CB /* light-step-8021.mp3 */; };
+		A5DD6B8729CDA21E00E7C3CB /* crack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A5DD6B8529CDA21D00E7C3CB /* crack.mp3 */; };
+		A5DD6B8829CDA21E00E7C3CB /* crumple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A5DD6B8629CDA21D00E7C3CB /* crumple.mp3 */; };
 		A5F76E7E29CD7EF10008C67D /* cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F76E7D29CD7EF10008C67D /* cookie.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +42,11 @@
 		A57D113A29C8BE8500DCA956 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A57D113D29C8BE8500DCA956 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A57D114429C8CA3000DCA956 /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
+		A5DD6B7F29CD9BD800E7C3CB /* musicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicPlayer.swift; sourceTree = "<group>"; };
+		A5DD6B8129CD9C5400E7C3CB /* light-step-8021.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "light-step-8021.mp3"; path = "../../../../../Downloads/light-step-8021.mp3"; sourceTree = "<group>"; };
+		A5DD6B8429CDA07400E7C3CB /* light-step-8021.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "light-step-8021.mp3"; sourceTree = "<group>"; };
+		A5DD6B8529CDA21D00E7C3CB /* crack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = crack.mp3; path = ../../../../../Downloads/crack.mp3; sourceTree = "<group>"; };
+		A5DD6B8629CDA21D00E7C3CB /* crumple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = crumple.mp3; path = ../../../../../Downloads/crumple.mp3; sourceTree = "<group>"; };
 		A5F76E7D29CD7EF10008C67D /* cookie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cookie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +109,8 @@
 				30D3F2EB29CA13CF00596EC3 /* Views */,
 				A57D113629C8BE8400DCA956 /* Kudos_CookiesApp.swift */,
 				A57D113A29C8BE8500DCA956 /* Assets.xcassets */,
+				A5DD6B7F29CD9BD800E7C3CB /* musicPlayer.swift */,
+				A5DD6B8329CDA06F00E7C3CB /* Sounds */,
 				A57D113C29C8BE8500DCA956 /* Preview Content */,
 			);
 			path = "Kudos-Cookies";
@@ -109,8 +120,19 @@
 			isa = PBXGroup;
 			children = (
 				A57D113D29C8BE8500DCA956 /* Preview Assets.xcassets */,
+				A5DD6B8129CD9C5400E7C3CB /* light-step-8021.mp3 */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A5DD6B8329CDA06F00E7C3CB /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A5DD6B8529CDA21D00E7C3CB /* crack.mp3 */,
+				A5DD6B8629CDA21D00E7C3CB /* crumple.mp3 */,
+				A5DD6B8429CDA07400E7C3CB /* light-step-8021.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,8 +194,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A57D113E29C8BE8500DCA956 /* Preview Assets.xcassets in Resources */,
+				A5DD6B8729CDA21E00E7C3CB /* crack.mp3 in Resources */,
 				A57D113B29C8BE8500DCA956 /* Assets.xcassets in Resources */,
+				A5DD6B8229CD9C5400E7C3CB /* light-step-8021.mp3 in Resources */,
 				30D3F2E129C9C19400596EC3 /* KudosSeeder.json in Resources */,
+				A5DD6B8829CDA21E00E7C3CB /* crumple.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +215,7 @@
 				30D3F2ED29CA13ED00596EC3 /* CrackedView.swift in Sources */,
 				30B938E629CC7CE900639DE8 /* MotionManager.swift in Sources */,
 				30D3F2E729CA06EC00596EC3 /* DataLoader.swift in Sources */,
+				A5DD6B8029CD9BD800E7C3CB /* musicPlayer.swift in Sources */,
 				30D3F2E529CA065200596EC3 /* KudosData.swift in Sources */,
 				3074BA1529CB157000E07185 /* NameView.swift in Sources */,
 				30D3F2EF29CA150F00596EC3 /* KudosManager.swift in Sources */,

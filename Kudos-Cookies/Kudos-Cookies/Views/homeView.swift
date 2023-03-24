@@ -13,7 +13,7 @@ struct homeView: View {
     @State var position = CGSize.zero
     @Binding var kudosManager: KudosManager
     @Binding var cookieCount:Int
-    @Binding var page: Int
+    @Binding var page:Int
     
     var body: some View {
         VStack{

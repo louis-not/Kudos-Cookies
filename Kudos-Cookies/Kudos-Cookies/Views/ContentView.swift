@@ -25,6 +25,10 @@ struct ContentView: View {
 //        motion.accelerometer()
 //    }
     
+    init(){
+        playSound(sound:"light-step-081", type: "mp3")
+    }
+    
     var body: some View {
         ZStack{
             // Background Color
