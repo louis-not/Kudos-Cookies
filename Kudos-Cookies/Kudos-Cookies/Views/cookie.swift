@@ -50,6 +50,7 @@ struct cookie: View {
                         .onEnded({ _ in
                             if currOffset.height > -180 {
                                 currOffset.height = lastOffset.height
+                                lastOffset.width = currOffset.width
                             }
                         })
                 )
