@@ -14,18 +14,13 @@ struct ContentView: View {
     @State private var name:String = "Alice"
     @State var page = 1
     @State var motion = Motion()
-    @State var cookieCount:Int = 5
     
     // Dragging state
 //    @State private var isDragging = false
 //    @State var position = CGSize.zero
     
-//    init() {
-//        motion.gyro()
-//        motion.accelerometer()
-//    }
-    
     init(){
+        motion.gyro()
         playSound(sound:"light-step-081", type: "mp3")
     }
     
@@ -40,7 +35,7 @@ struct ContentView: View {
                 if page == 1 {
                     NameView(kudosManager: $kudosManager, page: $page)
                 } else if page == 2 {
-                    homeView(kudosManager: $kudosManager, cookieCount: $cookieCount, page: $page )
+                    homeView(kudosManager: $kudosManager, page: $page)
                 } else if page == 3 {
                     CrackedView(kudosManager: $kudosManager, page: $page, kudos: kudosManager.getRandomKudos())
                 }

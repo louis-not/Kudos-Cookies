@@ -21,12 +21,11 @@ struct CrackedView: View {
     @Binding var kudosManager: KudosManager
     @Binding var page: Int
     @State var kudos: KudosData
-    @State var cookieCount:Int = 5
     
     var body: some View {
         
         ZStack {
-            homeView(kudosManager: $kudosManager, cookieCount:$cookieCount, page: $page)
+            homeView(kudosManager: $kudosManager, page: $page)
                 .blur(radius: 10)
             
             Rectangle()
@@ -81,7 +80,7 @@ struct CrackedView: View {
                                 rightRotationAngle += 60
                                 kudosWidth *= 15
                                 kudosFontSize *= 10
-                                textOffset = -100
+                                textOffset = -1000
                                 textHOffset -= 45
                                 isCracked = true
                             }

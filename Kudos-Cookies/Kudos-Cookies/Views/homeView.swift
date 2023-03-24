@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct homeView: View {
-//    @Binding var name:String
-    @State var isDragging=false
+
+    @State var isDragging = false
     @State var position = CGSize.zero
     @Binding var kudosManager: KudosManager
-    @Binding var cookieCount:Int
     @Binding var page:Int
     
     var body: some View {
@@ -54,7 +53,7 @@ struct homeView: View {
                         .frame(width: 300, height: 400, alignment: .center)
                         .padding(.top,50)
                     
-                    ForEach(0..<cookieCount, id:\.self){ _ in
+                    ForEach(0..<kudosManager.myKudos.count, id:\.self){ _ in
                         cookie(page: $page)
                     }
                 }

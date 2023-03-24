@@ -19,7 +19,7 @@ struct NameView: View {
         
         NavigationView {
             ZStack {
-                homeView(kudosManager: $kudosManager, cookieCount:$cookieCount, page: $page)
+                homeView(kudosManager: $kudosManager, page: $page)
                     .blur(radius: 10)
 
                 Rectangle()

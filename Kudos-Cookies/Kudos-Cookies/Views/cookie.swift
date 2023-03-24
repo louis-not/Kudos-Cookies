@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreMotion
 
 struct cookie: View {
 
@@ -15,6 +16,7 @@ struct cookie: View {
     @Binding var page: Int
     let minOffset = CGSize(width: -80, height: -180)
     let maxOffset = CGSize(width: 80, height: 180)
+//    let motionActivity = CMMotionActivityManager.isActivityAvailable()
     
     var body: some View {
         ZStack{
@@ -22,7 +24,7 @@ struct cookie: View {
                 .resizable(resizingMode: .stretch)
                 .scaledToFit()
                 .frame(width: 100, height: 100)
-//                .rotationEffect(.degrees(CGFloat.random(in:-90...90)))
+                .rotationEffect(.degrees(CGFloat.random(in:-90...90)))
                 .offset(currOffset)
                 .animation(.easeIn, value: currOffset)
                 .gesture(
@@ -46,27 +48,14 @@ struct cookie: View {
                                 height: min(max(proposedOffset.height, minOffset.height), maxOffset.height))
                         })
                         .onEnded({ _ in
-                            lastOffset = currOffset
+                            if currOffset.height > -180 {
+                                currOffset.height = lastOffset.height
+                            }
                         })
-//                )
-//        }
-//            .overlay(
-//                RoundedRectangle(cornerRadius: 10)
-////                    .frame(width: 300, height: 400, alignment: .center)
-////                    .resizable(resizingMode: .stretch)
-//                    .stroke(Color.red, lineWidth: 2)
-            )
-//            .clipped()
+                )
+            
+        }
 
-    }
-//
-//    private func updateOffset() {
-//        let maxX = UIScreen.main.bounds.width
-//        let maxY = UIScreen.main.bounds.height
-//        let proposedOffset = CGSize(width: offset.width + position.width, height: offset.height + position.height)
-//        let x = max(0, min(proposedOffset.width, maxX))
-//        let y = max(0, min(proposedOffset.height, maxY))
-//        offset = CGSize(width: x, height: y)
     }
 }
 

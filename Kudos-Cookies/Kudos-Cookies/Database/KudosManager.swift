@@ -18,8 +18,7 @@ public class KudosManager {
     func getKudos() -> Void {
         myKudos.removeAll()
         for kudos in data {
-            if(kudos.name == name) {
-                print(kudos.message)
+            if(kudos.name.lowercased() == name.lowercased()) {
                 myKudos.append(kudos)
                 nickname = kudos.nickname
             }
