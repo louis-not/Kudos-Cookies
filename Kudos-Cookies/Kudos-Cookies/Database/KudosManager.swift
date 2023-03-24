@@ -15,8 +15,10 @@ public class KudosManager {
     var userExist = false
     
     func getKudos() -> Void {
+        myKudos.removeAll()
         for kudos in data {
             if(kudos.name == name) {
+                print(kudos.message)
                 myKudos.append(kudos)
             }
         }

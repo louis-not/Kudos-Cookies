@@ -20,10 +20,10 @@ struct ContentView: View {
 //    @State private var isDragging = false
 //    @State var position = CGSize.zero
     
-    init() {
-        motion.gyro()
-        motion.accelerometer()
-    }
+//    init() {
+//        motion.gyro()
+//        motion.accelerometer()
+//    }
     
     var body: some View {
         ZStack{

@@ -60,6 +60,7 @@ struct NameView: View {
                     Button("Next") {
                         kudosManager.name = nameInput
                         kudosManager.getKudos()
+                        print(kudosManager.myKudos)
                         
                         if(kudosManager.myKudos.isEmpty) {
                             showAlert = true
