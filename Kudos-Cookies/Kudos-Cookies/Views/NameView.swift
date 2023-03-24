@@ -67,7 +67,7 @@ struct NameView: View {
                         } else {
                             showAlert = false
                             kudosManager.userExist = true
-                            page = 3
+                            page = 2
                         }
                     }
                     .foregroundColor(.brown)

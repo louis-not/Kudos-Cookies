@@ -38,37 +38,28 @@ struct homeView: View {
                     
                 }
                 .padding(.leading, 40)
+                
                 Text("It's time to get your cookie!")
                     .font(.title2)
                     .foregroundColor(Color(red: 0.596078431372549, green: 0.3568627450980392, blue: 0.24313725490196078, opacity: 1.0))
                     .bold()
                     .padding(.leading, 40)
                 Spacer()
-                ZStack{
-                    Color.blue
-                    ZStack {
-                        Color.red
-                        Image("jar")
-                            .resizable(resizingMode: .stretch)
-                            .foregroundColor(.accentColor)
-                            .scaledToFit()
-                            .frame(width: 300, height: 400, alignment: .center)
-                            .padding(.top,50)
-                        // foreach di loop sebanyak jumlah cookiecount
-                        ForEach(0..<cookieCount, id:\.self){ _ in
-                            cookie()
-//                                .clipped()
-                        }
-
-                    }.frame(width: 100,height: 50)
+        
+                ZStack {
+                    Image("jar")
+                        .resizable(resizingMode: .stretch)
+                        .foregroundColor(.accentColor)
+                        .scaledToFit()
+                        .frame(width: 300, height: 400, alignment: .center)
+                        .padding(.top,50)
                     
+                    ForEach(0..<cookieCount, id:\.self){ _ in
+                        cookie(page: $page)
+                    }
                 }
                 Spacer()
-                // Cookie Object
-                
             }
-
-            
             Spacer()
         }
     }
