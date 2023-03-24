@@ -13,6 +13,7 @@ public class KudosManager {
     var name = ""
     var myKudos = [KudosData]()
     var userExist = false
+    var nickname = ""
     
     func getKudos() -> Void {
         myKudos.removeAll()
@@ -20,6 +21,7 @@ public class KudosManager {
             if(kudos.name == name) {
                 print(kudos.message)
                 myKudos.append(kudos)
+                nickname = kudos.nickname
             }
         }
     }

@@ -30,7 +30,7 @@ struct homeView: View {
                     Button {
                         page = 1
                     } label: {
-                        Text("\(kudosManager.name)")
+                        Text("\(kudosManager.nickname)")
                             .font(.title2)
                             .foregroundColor(Color(red: 0.7176470588235294, green: 0.30196078431372547, blue: 0.10196078431372549))
                             .bold()

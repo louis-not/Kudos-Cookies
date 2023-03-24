@@ -43,9 +43,13 @@ struct cookie: View {
                     DragGesture()
                         .onChanged({ value in
                             dragOffset = value.translation
-                            let proposedOffset = CGSize(width: position.width + value.translation.width, height: position.height + value.translation.height)
-                            position = CGSize(width: min(max(proposedOffset.width, minOffset.width), maxOffset.width),
-                                            height: min(max(proposedOffset.height, minOffset.height), maxOffset.height))
+                            let proposedOffset = CGSize(
+                                width: position.width + value.translation.width,
+                                height: position.height + value.translation.height)
+                            
+                            position = CGSize(
+                                width: min(max(proposedOffset.width, minOffset.width), maxOffset.width),
+                                height: min(max(proposedOffset.height, minOffset.height), maxOffset.height))
                         })
                         .onEnded({ _ in
                             if position.height >= 100 {
