@@ -14,6 +14,7 @@ struct ContentView: View {
     @State private var name:String = "Alice"
     @State var page = 1
     @State var motion = Motion()
+    @State var cookieCount:Int = 5
     
     // Dragging state
 //    @State private var isDragging = false
@@ -35,7 +36,7 @@ struct ContentView: View {
                 if page == 1 {
                     NameView(kudosManager: $kudosManager, page: $page)
                 } else if page == 2 {
-                    homeView(kudosManager: $kudosManager, page: $page)
+                    homeView(kudosManager: $kudosManager, cookieCount: $cookieCount, page: $page )
                 } else if page == 3 {
                     CrackedView(kudosManager: $kudosManager, page: $page, kudos: kudosManager.getRandomKudos())
                 }

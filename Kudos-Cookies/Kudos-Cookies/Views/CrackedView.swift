@@ -21,11 +21,12 @@ struct CrackedView: View {
     @Binding var kudosManager: KudosManager
     @Binding var page: Int
     @State var kudos: KudosData
+    @State var cookieCount:Int = 5
     
     var body: some View {
         
         ZStack {
-            homeView(kudosManager: $kudosManager, page: $page)
+            homeView(kudosManager: $kudosManager, cookieCount:$cookieCount, page: $page)
                 .blur(radius: 10)
             
             Rectangle()

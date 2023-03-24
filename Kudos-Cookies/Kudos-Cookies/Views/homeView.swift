@@ -12,6 +12,7 @@ struct homeView: View {
     @State var isDragging=false
     @State var position = CGSize.zero
     @Binding var kudosManager: KudosManager
+    @Binding var cookieCount:Int
     @Binding var page: Int
     
     var body: some View {
@@ -36,36 +37,30 @@ struct homeView: View {
                     }
                     
                 }
+                .padding(.leading, 40)
                 Text("It's time to get your cookie!")
                     .font(.title2)
                     .foregroundColor(Color(red: 0.596078431372549, green: 0.3568627450980392, blue: 0.24313725490196078, opacity: 1.0))
                     .bold()
+                    .padding(.leading, 40)
                 Spacer()
                 ZStack{
-                    
-                    Image("jar")
-                        .resizable(resizingMode: .stretch)
-                        .foregroundColor(.accentColor)
-                        .scaledToFit()
-                        .frame(width: 300, height: 400, alignment: .center)
-                        .padding(.top,50)
-                    
-                    Circle()
-                        .frame(width: 100, height: 100)
-                        .offset(x: position.width, y: position.height)
-                        .foregroundColor(.brown)
-                        .animation(.spring(), value: position)
-                        .gesture(
-                            DragGesture()
-                                .onChanged({ value in
-                                    position = value.translation
-                                    isDragging = true
-                                })
-                                .onEnded({ value in
-                                    position = .zero // CGSize(width: 0, height: 200)
-                                    isDragging = false
-                                })
-                        )
+                    Color.blue
+                    ZStack {
+                        Color.red
+                        Image("jar")
+                            .resizable(resizingMode: .stretch)
+                            .foregroundColor(.accentColor)
+                            .scaledToFit()
+                            .frame(width: 300, height: 400, alignment: .center)
+                            .padding(.top,50)
+                        // foreach di loop sebanyak jumlah cookiecount
+                        ForEach(0..<cookieCount, id:\.self){ _ in
+                            cookie()
+//                                .clipped()
+                        }
+
+                    }.frame(width: 100,height: 50)
                     
                 }
                 Spacer()
@@ -81,6 +76,7 @@ struct homeView: View {
 
 //struct homeView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        homeView()
+//        homeView(
+//                 cookieCount: .constant(5))
 //    }
 //}

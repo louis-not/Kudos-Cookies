@@ -13,12 +13,13 @@ struct NameView: View {
     @Binding var kudosManager: KudosManager
     @Binding var page: Int
     @State var showAlert = false
+    @State var cookieCount:Int = 5
     
     var body: some View {
         
         NavigationView {
             ZStack {
-                homeView(kudosManager: $kudosManager, page: $page)
+                homeView(kudosManager: $kudosManager, cookieCount:$cookieCount, page: $page)
                     .blur(radius: 10)
 
                 Rectangle()

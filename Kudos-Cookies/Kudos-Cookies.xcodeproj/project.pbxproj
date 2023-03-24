@@ -20,6 +20,7 @@
 		A57D113B29C8BE8500DCA956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57D113A29C8BE8500DCA956 /* Assets.xcassets */; };
 		A57D113E29C8BE8500DCA956 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57D113D29C8BE8500DCA956 /* Preview Assets.xcassets */; };
 		A57D114529C8CA3000DCA956 /* homeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D114429C8CA3000DCA956 /* homeView.swift */; };
+		A5F76E7E29CD7EF10008C67D /* cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F76E7D29CD7EF10008C67D /* cookie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		A57D113A29C8BE8500DCA956 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A57D113D29C8BE8500DCA956 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A57D114429C8CA3000DCA956 /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
+		A5F76E7D29CD7EF10008C67D /* cookie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cookie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				A57D114429C8CA3000DCA956 /* homeView.swift */,
 				30D3F2EC29CA13ED00596EC3 /* CrackedView.swift */,
 				3074BA1429CB157000E07185 /* NameView.swift */,
+				A5F76E7D29CD7EF10008C67D /* cookie.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5F76E7E29CD7EF10008C67D /* cookie.swift in Sources */,
 				A57D113929C8BE8400DCA956 /* ContentView.swift in Sources */,
 				A57D113729C8BE8400DCA956 /* Kudos_CookiesApp.swift in Sources */,
 				30D3F2ED29CA13ED00596EC3 /* CrackedView.swift in Sources */,
