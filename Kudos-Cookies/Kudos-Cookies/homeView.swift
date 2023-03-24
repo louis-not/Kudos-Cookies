@@ -12,8 +12,7 @@ struct homeView: View {
     @Binding var showNameView:Bool
     // buat 1 variable sebagai constraint dari zstack batas si circle
     @Binding var cookieCount:Int
-    @State var isDragging=false
-    @State var position = CGSize(width: 0, height: 175)
+//    @State var getCookie: Bool
     
     var body: some View {
         VStack{
@@ -36,12 +35,13 @@ struct homeView: View {
                             .foregroundColor(Color(red: 0.7176470588235294, green: 0.30196078431372547, blue: 0.10196078431372549))
                             .bold()
                     }
-
                 }
+                .padding(.leading, 30)
                 Text("It's time to get your cookie!")
                     .font(.title2)
                     .foregroundColor(Color(red: 0.596078431372549, green: 0.3568627450980392, blue: 0.24313725490196078, opacity: 1.0))
                     .bold()
+                    .padding(.leading, 30)
                 Spacer()
                 ZStack{
                     Color.blue
@@ -54,29 +54,12 @@ struct homeView: View {
                             .frame(width: 300, height: 400, alignment: .center)
                             .padding(.top,50)
                         // foreach di loop sebanyak jumlah cookiecount
-                        // masukin codingan cookie view dibawah
-                        // offset harus dirandom pake arc.randomize
-                        Circle()
-                            .frame(width: 100, height: 100)
-                            .offset(x: position.width, y: position.height)
-                            .foregroundColor(.brown)
-                            .animation(.spring(), value: position)
-                            .gesture(
-                                DragGesture()
-                                    .onChanged({ value in
-                                        position = value.translation
-                                        isDragging = true
-                                    })
-                                    .onEnded({ value in
-                                        position = CGSize(width: position.width, height: 175) // CGSize(width: 0, height: 200)
-                                        isDragging = false
-                                    })
-                            )
+                        ForEach(0..<cookieCount, id:\.self){ _ in
+                            cookie()
+//                                .clipped()
+                        }
 
                     }.frame(width: 100,height: 50)
-                    //spritekit
-                    // embedd
-                    // spritekit animation bounce
                 }
                 Spacer()
                 // Cookie Object

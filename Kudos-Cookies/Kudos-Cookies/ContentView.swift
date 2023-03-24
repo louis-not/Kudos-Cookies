@@ -26,9 +26,9 @@ struct ContentView: View {
             // Home Element
             VStack {
                 homeView(showNameView: $showNameView, cookieCount: $cookieCount)
-//                if nameButton{
-//                    Text("Insert your name here")
-//                }
+                if showNameView{
+                    Text("Insert your name here")
+                }
             }
             
         }
@@ -46,3 +46,4 @@ struct VisualEffectView: UIViewRepresentable {
     func makeUIView(context: UIViewRepresentableContext<Self>) -> UIVisualEffectView { UIVisualEffectView() }
     func updateUIView(_ uiView: UIVisualEffectView, context: UIViewRepresentableContext<Self>) { uiView.effect = effect }
 }
+
