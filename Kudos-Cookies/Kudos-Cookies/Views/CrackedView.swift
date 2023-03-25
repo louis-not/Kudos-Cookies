@@ -83,6 +83,7 @@ struct CrackedView: View {
                                 textOffset = -1000
                                 textHOffset -= 45
                                 isCracked = true
+                                playSound(sound:"crumple", type: "mp3")
                             }
                         }
                     }
@@ -92,6 +93,8 @@ struct CrackedView: View {
         .onTapGesture {
             isCracked = false
             page = 2
+            playSound(sound:"background", type: "mp3")
+
         }
     }
 }

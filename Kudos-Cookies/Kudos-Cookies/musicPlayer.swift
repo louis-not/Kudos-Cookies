@@ -14,6 +14,7 @@ func playSound(sound: String, type: String){
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
             audioPlayer?.play()
+            audioPlayer?.numberOfLoops = -1
         } catch {
             print("ERROR: Couldn't find sound file!")
         }

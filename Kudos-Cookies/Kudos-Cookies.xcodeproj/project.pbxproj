@@ -15,6 +15,8 @@
 		30D3F2E729CA06EC00596EC3 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3F2E629CA06EC00596EC3 /* DataLoader.swift */; };
 		30D3F2ED29CA13ED00596EC3 /* CrackedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3F2EC29CA13ED00596EC3 /* CrackedView.swift */; };
 		30D3F2EF29CA150F00596EC3 /* KudosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3F2EE29CA150F00596EC3 /* KudosManager.swift */; };
+		A5214FB529CF5ADA003BCD7E /* crumple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A5214FB329CF5ADA003BCD7E /* crumple.mp3 */; };
+		A5214FB629CF5ADA003BCD7E /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A5214FB429CF5ADA003BCD7E /* background.mp3 */; };
 		A57D113729C8BE8400DCA956 /* Kudos_CookiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D113629C8BE8400DCA956 /* Kudos_CookiesApp.swift */; };
 		A57D113929C8BE8400DCA956 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D113829C8BE8400DCA956 /* ContentView.swift */; };
 		A57D113B29C8BE8500DCA956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57D113A29C8BE8500DCA956 /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 		30D3F2E629CA06EC00596EC3 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		30D3F2EC29CA13ED00596EC3 /* CrackedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrackedView.swift; sourceTree = "<group>"; };
 		30D3F2EE29CA150F00596EC3 /* KudosManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosManager.swift; sourceTree = "<group>"; };
+		A5214FB329CF5ADA003BCD7E /* crumple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = crumple.mp3; path = "../../../../../Music/Music/Media.localized/Music/Unknown Artist/Unknown Album/crumple.mp3"; sourceTree = "<group>"; };
+		A5214FB429CF5ADA003BCD7E /* background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = background.mp3; path = ../../../../../Downloads/background.mp3; sourceTree = "<group>"; };
 		A57D113329C8BE8400DCA956 /* Kudos-Cookies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kudos-Cookies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57D113629C8BE8400DCA956 /* Kudos_CookiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kudos_CookiesApp.swift; sourceTree = "<group>"; };
 		A57D113829C8BE8400DCA956 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,7 +44,6 @@
 		A57D113D29C8BE8500DCA956 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A57D114429C8CA3000DCA956 /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
 		A5DD6B7F29CD9BD800E7C3CB /* musicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicPlayer.swift; sourceTree = "<group>"; };
-		A5DD6B8429CDA07400E7C3CB /* light-step-8021.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "light-step-8021.mp3"; sourceTree = "<group>"; };
 		A5F76E7D29CD7EF10008C67D /* cookie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cookie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,7 +124,8 @@
 		A5DD6B8329CDA06F00E7C3CB /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				A5DD6B8429CDA07400E7C3CB /* light-step-8021.mp3 */,
+				A5214FB429CF5ADA003BCD7E /* background.mp3 */,
+				A5214FB329CF5ADA003BCD7E /* crumple.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -185,6 +189,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A57D113E29C8BE8500DCA956 /* Preview Assets.xcassets in Resources */,
+				A5214FB629CF5ADA003BCD7E /* background.mp3 in Resources */,
+				A5214FB529CF5ADA003BCD7E /* crumple.mp3 in Resources */,
 				A57D113B29C8BE8500DCA956 /* Assets.xcassets in Resources */,
 				30D3F2E129C9C19400596EC3 /* KudosSeeder.json in Resources */,
 			);
@@ -337,7 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kudos-Cookies/Preview Content\"";
-				DEVELOPMENT_TEAM = 3R8392Y763;
+				DEVELOPMENT_TEAM = NQ6K7G8J8Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -350,7 +356,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nano1.challenge.com;
+				PRODUCT_BUNDLE_IDENTIFIER = louis.nano;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -366,7 +372,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kudos-Cookies/Preview Content\"";
-				DEVELOPMENT_TEAM = 3R8392Y763;
+				DEVELOPMENT_TEAM = NQ6K7G8J8Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -379,7 +385,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nano1.challenge.com;
+				PRODUCT_BUNDLE_IDENTIFIER = louis.nano;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

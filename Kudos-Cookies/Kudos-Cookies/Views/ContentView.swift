@@ -13,13 +13,11 @@ struct ContentView: View {
     @State private var index:Int = 0
     @State private var name:String = "Alice"
     @State var page = 1
+    @State var backgroundMusic = false
     
-    // Dragging state
-//    @State private var isDragging = false
-//    @State var position = CGSize.zero
     
     init(){
-        playSound(sound:"light-step-081", type: "mp3")
+        playSound(sound:"background", type: "mp3")
     }
     
     var body: some View {
