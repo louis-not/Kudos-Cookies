@@ -13,14 +13,12 @@ struct ContentView: View {
     @State private var index:Int = 0
     @State private var name:String = "Alice"
     @State var page = 1
-    @State var motion = Motion()
     
     // Dragging state
 //    @State private var isDragging = false
 //    @State var position = CGSize.zero
     
     init(){
-        motion.gyro()
         playSound(sound:"light-step-081", type: "mp3")
     }
     

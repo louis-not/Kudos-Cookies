@@ -10,33 +10,46 @@ import CoreMotion
 
 public class Motion {
     var motion = CMMotionManager()
-    var rotateX = 0.0
-    var rotateY = 0.0
-    var accelX = 0.0
-    var accelY = 0.0
-    
-    func gyro() {
+   
+    init() {
         motion.startGyroUpdates()
-        
-        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [self] _ in
-            if let data = self.motion.gyroData {
-                rotateX = data.rotationRate.x
-                rotateY = data.rotationRate.y
-                print(data.rotationRate.x)
-            }
-        }
+        motion.startAccelerometerUpdates()
     }
     
-    func accelerometer() {
-        motion.startAccelerometerUpdates()
-        motion.accelerometerUpdateInterval = 1
-        
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [self] _ in
-            if let data = self.motion.accelerometerData {
-                accelX = data.acceleration.x
-                accelY = data.acceleration.y
-                print(data.acceleration.x)
-            }
-        }
+    func stopGyroUpdate() {
+        motion.stopAccelerometerUpdates()
     }
+    
+    func stopAccelerometerUpdate() {
+        motion.stopAccelerometerUpdates()
+    }
+    
+    func getAccelerometerDataX() -> Double {
+        if let data = self.motion.accelerometerData {
+            return data.acceleration.x * 100
+        }
+        return 0
+    }
+    
+    func getAccelorometerDataY() -> Double {
+        if let data = self.motion.accelerometerData {
+            return data.acceleration.y * 100
+        }
+        return 0
+    }
+    
+    func getGyroDataX() -> Double {
+        if let data = self.motion.gyroData {
+            return data.rotationRate.x * 50
+        }
+        return 0
+    }
+    
+    func getGyroDataY() -> Double {
+        if let data = self.motion.gyroData {
+            return data.rotationRate.y * 50
+        }
+        return 0
+    }
+    
 }
