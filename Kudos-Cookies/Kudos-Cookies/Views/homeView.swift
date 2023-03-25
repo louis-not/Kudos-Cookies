@@ -36,13 +36,11 @@ struct homeView: View {
                     }
                     
                 }
-                .padding(.leading, 40)
                 
                 Text("It's time to get your cookie!")
                     .font(.title2)
                     .foregroundColor(Color(red: 0.596078431372549, green: 0.3568627450980392, blue: 0.24313725490196078, opacity: 1.0))
                     .bold()
-                    .padding(.leading, 40)
                 Spacer()
         
                 ZStack {

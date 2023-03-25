@@ -10,6 +10,7 @@ import SwiftUI
 struct NameView: View {
     
     @State var nameInput: String = ""
+    @State var currUser = ""
     @Binding var kudosManager: KudosManager
     @Binding var page: Int
     @State var showAlert = false
@@ -30,8 +31,8 @@ struct NameView: View {
 
                 ZStack {
                     if nameInput.isEmpty {
-                        Text("Input your name")
-                            .font(.title)
+                        Text("Input your full name")
+                            .font(.title2)
                             .foregroundColor(Color(red: 0.7176470588235294, green: 0.30196078431372547, blue: 0.10196078431372549, opacity: 0.5))
                             .bold()
                     }
@@ -49,39 +50,53 @@ struct NameView: View {
                 
                 if kudosManager.userExist {
                     ToolbarItem(placement: .navigationBarLeading) {
-                        Button("Back") {
+                        Button(action: {
                             page = 2
-                        }
-                        .foregroundColor(.brown)
+                        }, label: {
+                            HStack {
+                                Image(systemName: "chevron.backward")
+                                    .foregroundColor(.brown)
+                                    .font(.caption)
+                                Text("Back")
+                                    .foregroundColor(.brown)
+                            }
+                        })
                     }
                 }
                 
                 ToolbarItem(placement: .primaryAction) {
-                    Button("Next") {
+                    Button(action: {
+                        let tempUser = kudosManager.name
+                        
                         kudosManager.name = nameInput
                         kudosManager.getKudos()
-                        print(kudosManager.myKudos)
                         
                         if(kudosManager.myKudos.isEmpty) {
                             showAlert = true
+                            kudosManager.name = tempUser
+                            kudosManager.getKudos()
                         } else {
                             showAlert = false
                             kudosManager.userExist = true
                             page = 2
                         }
-                    }
-                    .foregroundColor(.brown)
+                    }, label: {
+                        HStack {
+                            Text("Next")
+                                .foregroundColor(.brown)
+                            Image(systemName: "chevron.forward")
+                                .foregroundColor(.brown)
+                                .font(.caption)
+                        }
+                    })
                 }
             }
             .alert("Name does not exist!", isPresented: $showAlert) {
-                Button("Try Again", role: .cancel) { }
+                Button(action:{}, label: {
+                    Text("Try Again")
+                        .foregroundColor(.brown)
+                })
             }
         }
     }
 }
-
-//struct NameView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        NameView()
-//    }
-//}
