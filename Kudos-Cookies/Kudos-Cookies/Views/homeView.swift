@@ -34,7 +34,6 @@ struct homeView: View {
                             .foregroundColor(Color(red: 0.7176470588235294, green: 0.30196078431372547, blue: 0.10196078431372549))
                             .bold()
                     }
-                    
                 }
                 
                 Text("It's time to get your cookie!")
