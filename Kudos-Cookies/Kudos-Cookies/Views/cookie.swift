@@ -14,8 +14,8 @@ struct cookie: View {
     @State var initialPosition = true
     @Binding var page: Int
     @State var rotation = CGFloat.random(in:-90...90)
-    let minOffset = CGSize(width: -80, height: -180)
-    let maxOffset = CGSize(width: 80, height: 180)
+    let minOffset = CGSize(width: -73, height: -180)
+    let maxOffset = CGSize(width: 73, height: 169)
     let motionActivity = Motion()
     let movementTimer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     let rotationTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -46,7 +46,7 @@ struct cookie: View {
 
                     currOffset = CGSize(
                         width: min(max(proposedOffset.width, minOffset.width), maxOffset.width),
-                        height: min(max(proposedOffset.height, minOffset.height), maxOffset.height))
+                        height: min(max(proposedOffset.height, minOffset.height + 62), maxOffset.height))
 
                     lastOffset = currOffset
                 }
@@ -55,7 +55,7 @@ struct cookie: View {
                 if(motionEnabled && abs(motionActivity.getAccelerometerDataX()) > sensitivity && currOffset.width > minOffset.width && currOffset.width < maxOffset.width) {
                     rotation += motionActivity.getGyroDataX()
                 }
-                if(motionEnabled && abs(motionActivity.getAccelorometerDataY()) > sensitivity && currOffset.height < maxOffset.height) {
+                if(motionEnabled && abs(motionActivity.getAccelorometerDataY()) > sensitivity && currOffset.height > (minOffset.height + 62) && currOffset.height < maxOffset.height) {
                     rotation += motionActivity.getGyroDataY()
                 }
             }
