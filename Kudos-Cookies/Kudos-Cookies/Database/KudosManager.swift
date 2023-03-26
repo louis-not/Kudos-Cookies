@@ -14,6 +14,7 @@ public class KudosManager {
     var myKudos = [KudosData]()
     var userExist = false
     var nickname = ""
+    var currIndex = 0
     
     func getKudos() -> Void {
         myKudos.removeAll()
@@ -26,6 +27,14 @@ public class KudosManager {
     }
     
     func getRandomKudos() -> KudosData {
-        return myKudos.randomElement()!
+        var index = currIndex
+        while true {
+            index = Int.random(in: 0 ..< myKudos.count)
+            if index != currIndex {
+                currIndex = index
+                break
+            }
+        }
+        return myKudos[currIndex]
     }
 }

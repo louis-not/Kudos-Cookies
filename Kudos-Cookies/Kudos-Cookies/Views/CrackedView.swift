@@ -56,7 +56,7 @@ struct CrackedView: View {
                         }
                         Spacer()
                     }
-                    .frame(width: 180, height: 70)
+                    .frame(width: 190, height: 80)
                     .offset(x: textHOffset, y: 20)
                     
                     HStack {
@@ -78,9 +78,9 @@ struct CrackedView: View {
                                 leftCookieLocation.y += 290
                                 leftRotationAngle -= 60
                                 rightRotationAngle += 60
-                                kudosWidth *= 15
+                                kudosWidth *= 17
                                 kudosFontSize *= 10
-                                textOffset = -1000
+                                textOffset = -350
                                 textHOffset -= 45
                                 isCracked = true
                                 playSound(sound:"crumple", type: "mp3")

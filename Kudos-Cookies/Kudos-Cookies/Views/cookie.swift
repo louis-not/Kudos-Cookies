@@ -19,6 +19,7 @@ struct cookie: View {
     let motionActivity = Motion()
     let movementTimer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     let rotationTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    let sensitivity = 20.0
     @State var motionEnabled = true
     
     var body: some View {
@@ -31,9 +32,17 @@ struct cookie: View {
             .animation(.linear, value: currOffset)
             .onReceive(movementTimer) { _ in
                 if(motionEnabled) {
-                    let proposedOffset = CGSize(
-                        width: currOffset.width + motionActivity.getAccelerometerDataX(),
-                        height: currOffset.height - motionActivity.getAccelorometerDataY())
+                    let x = motionActivity.getAccelerometerDataX()
+                    let y = motionActivity.getAccelorometerDataY()
+                    var proposedOffset = currOffset
+                    
+                    if(abs(x) > sensitivity) {
+                        proposedOffset.width = currOffset.width + x
+                    }
+
+                    if(abs(y) > sensitivity) {
+                        proposedOffset.height = currOffset.height - y
+                    }
 
                     currOffset = CGSize(
                         width: min(max(proposedOffset.width, minOffset.width), maxOffset.width),
@@ -43,10 +52,10 @@ struct cookie: View {
                 }
             }
             .onReceive(rotationTimer) { _ in
-                if(motionEnabled && motionActivity.getAccelerometerDataX() > 2 && currOffset.width > minOffset.width && currOffset.width < maxOffset.width) {
+                if(motionEnabled && abs(motionActivity.getAccelerometerDataX()) > sensitivity && currOffset.width > minOffset.width && currOffset.width < maxOffset.width) {
                     rotation += motionActivity.getGyroDataX()
                 }
-                if(motionEnabled && motionActivity.getAccelorometerDataY() > 2 && currOffset.height < maxOffset.height) {
+                if(motionEnabled && abs(motionActivity.getAccelorometerDataY()) > sensitivity && currOffset.height < maxOffset.height) {
                     rotation += motionActivity.getGyroDataY()
                 }
             }
@@ -82,9 +91,3 @@ struct cookie: View {
                 )
         }
 }
-
-//struct cookie_Previews: PreviewProvider {
-//    static var previews: some View {
-//        cookie(page: $page)
-//    }
-//}
