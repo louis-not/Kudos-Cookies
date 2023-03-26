@@ -35,7 +35,7 @@ struct CrackedView: View {
                 .ignoresSafeArea()
             
             VStack {
-                Text("Tap to open the cookie!")
+                Text("Tap to crack open the cookie!")
                     .font(.title2)
                     .foregroundColor(Color(red: 0.596078431372549, green: 0.3568627450980392, blue: 0.24313725490196078, opacity: 1.0))
                     .bold()
